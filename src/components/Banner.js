@@ -21,7 +21,7 @@ const Banner = () => {
         </div>
 
         <div className="hidden flex-1 lg:flex justify-end items-end">
-          <img src={Image} alt="Image" />
+          <img src={Image} alt="banner" />
         </div>
       </div>
       <Search />
