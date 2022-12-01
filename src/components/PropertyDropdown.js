@@ -24,7 +24,7 @@ const PropertyDropdown = () => {
           <div className="text-[15px] font-medium leading-tight">
             {property}
           </div>
-          <div className="text-[13px]">{'Select Your Place'}</div>
+          <div className="text-[13px]">{'Choose your property'}</div>
         </div>
         {isOpen ? (
           <RiArrowUpSLine className="dropdown-icon-secondary" />
