@@ -10,7 +10,7 @@ const HouseContextProvider = ({ children }) => {
   const [countries, setCountries] = useState([])
   const [property, setProperty] = useState('Property type (any)')
   const [properties, setProperties] = useState([])
-  const [price, setPrice] = useState('Price reange (any)')
+  const [price, setPrice] = useState('Price range (any)')
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
@@ -29,6 +29,10 @@ const HouseContextProvider = ({ children }) => {
     setProperties(uniqueProperties)
   }, [])
 
+  const handleClick = () => {
+    console.log(`clicked`)
+  }
+
   return (
     <HouseContext.Provider
       value={{
@@ -41,7 +45,8 @@ const HouseContextProvider = ({ children }) => {
         price,
         setPrice,
         houses,
-        loading
+        loading,
+        handleClick
       }}
     >
       {children}
