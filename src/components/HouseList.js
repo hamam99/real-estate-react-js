@@ -12,6 +12,12 @@ const HouseList = () => {
       <ImSpinner2 className="mx-auto animate-spin text-violet-700 mt-[200px] text-4xl" />
     )
   }
+
+  if (houses.length < 1) {
+    return (
+      <div className="text-4l flex justify-center">Sorry, nothing found</div>
+    )
+  }
   return (
     <section className="mb-20">
       <div className="container mx-auto">
